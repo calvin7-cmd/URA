@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.portal-header {
+    background-color: #55bdcd;
+    color: #ffffff;
+    padding: 15px 30px;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ura-logo {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+}
+
+.portal-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.info-bar {
+    background-color: #FFB81C;
+    color: #003366;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+}
+
+.portal-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.taxpayer-toggle-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.taxpayer-toggle-group input[type="radio"] {
+    display: none;
+}
+
+.toggle-btn {
+    flex: 1;
+    text-align: center;
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #003366;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.toggle-btn:hover {
+    background-color: #eef3f8;
+}
+
+.taxpayer-toggle-group input[type="radio"]:checked + .toggle-btn {
+    background-color: #003366;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 51, 102, 0.25);
+}
+
+.form-section {
+    border: 2px solid #003366;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.form-section legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #003366;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #003366;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.15);
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 4px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #003366;
+    transform: scale(1.1);
+}
+
+.radio-group label {
+    font-weight: normal;
+    color: #333333;
+    cursor: pointer;
+}
+
+.form-actions {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.btn-next {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-next:hover {
+    background-color: #002244;
+}
